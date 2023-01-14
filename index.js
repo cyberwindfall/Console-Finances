@@ -101,6 +101,6 @@ let result = finances.reduce((a, b, i) => {
     d.decrease = (d.decrease[1] < change) ? d.decrease : [b[0], change]
     return d
 })
-console.log (finances)  //The total number of months included in the dataset
+console.log (finances.length)  //The total number of months included in the dataset
 console.log(result) // Return the full object
 console.log(result.total) // Only return one value, the total
